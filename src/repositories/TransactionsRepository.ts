@@ -34,7 +34,7 @@ class TransactionsRepository {
       if (item.type === 'outcome') {
         return item.value;
       }
-    }).filter(item => item);;
+    }).filter(item => item);
 
     const income: number = Number(incomeList.reduce((a, b) => Number(a) + Number(b), 0));
     const outcome: number = Number(outcomeList.reduce((a, b) => Number(a) + Number(b), 0));
